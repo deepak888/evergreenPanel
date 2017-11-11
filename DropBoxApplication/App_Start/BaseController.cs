@@ -21,8 +21,8 @@ namespace DropBoxApplication.App_Start
             if (urlType == 1)
                 url = "http://localhost:56381/api/";
             else if (urlType == 2)
-                url = "http://localhost:51673/api/";
-                //url = "http://103.233.79.234:1000/api/";
+               // url = "http://localhost:51673/api/";
+                url = "http://103.233.79.234:1000/api/";
             return url;
         }
     }

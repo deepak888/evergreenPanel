@@ -351,6 +351,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="scss\" />
+    <Folder Include="vendor\" />
     <Folder Include="Views\Operation\" />
   </ItemGroup>
   <ItemGroup>
