@@ -1,0 +1,66 @@
+﻿@Model DropBoxApplication.Models.ProductMasterModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@*@using (Html.BeginForm("ActivitySelectByIDby", "DailyActivity", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <div class="form-horizontal">
+        <h4>ProductMaster</h4>
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.Menuname, new { @class = "control-label col-md-2" })
+            @Html@Html.DropDownList("Direction", new SelectList(listItems), new { onchange = "getAlldata()" })
+            <div class="col-md-10">
+                @Html.DropDownList("MenuName",
+                ViewData["MenuName"] as SelectListItem[]))
+                @Html.ValidationMessageFor(model => model.MenuName)
+
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CategoryName, new { @class = "control-label col-md-2" })
+            @Html@Html.DropDownList("Direction", new SelectList(listItems), new { onchange = "getAlldata()" })
+            <div class="col-md-10">
+                @Html.DropDownList("CategoryName",
+                ViewData["CategoryName"] as SelectListItem[]))
+                @Html.ValidationMessageFor(model => model.CategoryName)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName)
+                @Html.ValidationMessageFor(model => model.ProductName)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImagePath, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="imagefile" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="submit" class="btn btn-default" />
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="reset" value="submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+
+
+        }
+        <div>
+            @Html.ActionLink("Back to ProductMaster", "index")
+        </div>
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }*@
+
+        
+
+

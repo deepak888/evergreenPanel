@@ -1,0 +1,55 @@
+﻿@model DropBoxApplication.Models.StoreMasterModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("AddNewStore", "StoreMaster", FormMethod.Post, new { role = "form", enctype = "multipart/form-data" }))
+{<div class="panel panel-default">
+        <div class="panel-heading">Store Master</div>
+        <div class="panel-body">
+            <div class="col-sm-12 ">
+                <div class="row">
+                    <div class="col-lg-3">
+                        @Html.TextBoxFor(model => model.StoreName, new { id = "StoreName", @class = "form-group form-control", placeholder = "Store Name" })
+                        @Html.ValidationMessageFor(model => model.StoreName)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.TextBoxFor(model => model.PhoneNumber, new { id = "PhoneNumber", @class = "form-group form-control", placeholder = "Phone Number" })
+                        @Html.ValidationMessageFor(model => model.PhoneNumber)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.TextBoxFor(model => model.Email, new { id = "Email", @class = "form-group form-control", placeholder = "Email Id" })
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                    <div class="col-lg-3">
+                        @Html.TextBoxFor(model => model.Address, new { id = "Address", @class = "form-group form-control", placeholder = "Address" })
+                        @Html.ValidationMessageFor(model => model.Address)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="btn btn-default image-preview-input">
+                            <input type="file" id="file" name="file" />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <input type="submit" value="Submit" class="btn btn-default" />
+                    </div>
+                    <div class="col-lg-1">
+                        <input type="reset" value="Reset" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
